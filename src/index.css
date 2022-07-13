@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button {
+    @apply flex items-center
+    px-4 py-2
+    text-sm font-medium 
+    rounded-lg;
+  }
+
+  .button-circle {
+    @apply flex
+    p-2
+    rounded-full;
+  }
+
+  .primary {
+    @apply text-white 
+    bg-blue-700 hover:bg-blue-800;
+  }
+
+  .pink {
+    @apply text-white 
+    bg-pink-700 hover:bg-pink-800;
+  }
+
+  .light {
+    @apply bg-white border border-gray-300;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 16px;
+}
