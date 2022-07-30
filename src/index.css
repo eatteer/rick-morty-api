@@ -43,7 +43,7 @@ code {
     monospace;
 }
 
-.card-container {
+.character-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 16px;
